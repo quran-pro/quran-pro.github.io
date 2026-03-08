@@ -1514,7 +1514,14 @@
             }
         };
         
-        function seekAudio() { audio.currentTime = (document.getElementById('progress-bar').value / 100) * audio.duration; }
+        function seekAudio() {
+    const progressBar = document.getElementById('progress-bar');
+    // Pehle check karo ki element aur audio dono sahi hain ya nahi
+    if (progressBar && typeof audio !== 'undefined' && isFinite(audio.duration)) {
+        audio.currentTime = (progressBar.value / 100) * audio.duration;
+    }
+                    }
+        
         
         function closePlayer() {
             audio.pause();
