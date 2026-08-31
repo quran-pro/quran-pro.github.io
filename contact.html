@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <title>Contact Us | Quran Pro</title>
+    <meta name="description" content="Quran Pro team se WhatsApp ya Instagram ke through connect karein - sawal, sujhaav ya feedback ke liye humse baat karein.">
+    <link rel="canonical" href="https://quran-pro.github.io/contact.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://quran-pro.github.io/contact.html">
+    <meta property="og:title" content="Contact Us | Quran Pro">
+    <meta property="og:description" content="Quran Pro team se WhatsApp ya Instagram ke through connect karein.">
+    <meta property="og:image" content="https://quran-pro.github.io/favicon.png">
+    <meta property="og:site_name" content="Quran Pro">
+
+    <link rel="icon" type="image/png" href="https://quran-pro.github.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://quran-pro.github.io/favicon.png">
+    <meta name="theme-color" content="#00615A">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #00615A;
+            --accent: #0F766E;
+            --bg: #f0f4f8;
+            --text: #0f172a;
+            --box-bg: #ffffff;
+        }
+        [data-theme="dark"] {
+            --bg: #020617;
+            --text: #f1f5f9;
+            --box-bg: #1e293b;
+            --primary: #2dd4bf;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Poppins', sans-serif;
+            transition: background 0.25s ease, color 0.25s ease;
+        }
+        header {
+            background: var(--box-bg);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: background 0.25s ease;
+        }
+        header a { text-decoration: none; }
+        .logo {
+            font-weight: 800;
+            font-size: 1.3rem;
+            color: var(--primary);
+        }
+        .header-icons {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+        .back-btn, #theme-btn {
+            color: var(--text);
+            font-size: 1.15rem;
+            cursor: pointer;
+        }
+        main {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 30px 20px 60px;
+        }
+        h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        p {
+            line-height: 1.7;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        .contact-card {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: var(--box-bg);
+            padding: 16px 18px;
+            border-radius: 14px;
+            margin-bottom: 14px;
+            text-decoration: none;
+            color: var(--text);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: background 0.25s ease;
+        }
+        .contact-card i {
+            font-size: 1.5rem;
+            color: var(--accent);
+            width: 30px;
+            text-align: center;
+        }
+        .contact-card .label {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        .contact-card .sub {
+            font-size: 0.78rem;
+            opacity: 0.6;
+        }
+        footer {
+            text-align: center;
+            padding: 25px 20px;
+            font-size: 0.75rem;
+            opacity: 0.6;
+        }
+        footer a {
+            color: var(--accent);
+            margin: 0 8px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Quran<span style="color:var(--accent)">Pro</span></a>
+        <div class="header-icons">
+            <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i></a>
+            <i class="fas fa-sun" id="theme-btn" onclick="toggleTheme()"></i>
+        </div>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <p>Koi sawal, sujhaav ya feedback hai? Neeche diye gaye channels se humse seedha connect karein.</p>
+
+        <a class="contact-card" href="https://wa.me/919660769056?text=Assalamu%20Alaikum,%20I%20am%20using%20your%20Quran%20Pro%20Website." target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+                <div class="label">WhatsApp</div>
+                <div class="sub">Seedha message karein</div>
+            </div>
+        </a>
+
+        <a class="contact-card" href="https://www.instagram.com/aarif_kathat_0715?igsh=MXFqMmdqZ3YzZDduaA==" target="_blank">
+            <i class="fab fa-instagram"></i>
+            <div>
+                <div class="label">Instagram</div>
+                <div class="sub">Follow karein aur DM bhejein</div>
+            </div>
+        </a>
+    </main>
+
+    <footer>
+        <div>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a>
+        </div>
+        <p style="margin-top:10px;">© 2024 Quran Pro</p>
+    </footer>
+
+    <script>
+        window.onload = () => {
+            document.documentElement.setAttribute("data-theme", "dark");
+        };
+        function toggleTheme() {
+            const b = document.documentElement;
+            const icon = document.getElementById('theme-btn');
+            if (b.getAttribute('data-theme') === 'dark') {
+                b.removeAttribute('data-theme');
+                icon.className = "fas fa-moon";
+            } else {
+                b.setAttribute('data-theme', 'dark');
+                icon.className = "fas fa-sun";
+            }
+        }
+    </script>
+</body>
+</html>
