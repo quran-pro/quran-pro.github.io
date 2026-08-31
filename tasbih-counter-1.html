@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <!-- Basic Encoding & Responsive -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="language" content="Hindi, English, Urdu">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <!-- Primary Meta Tags -->
+    <title>Tasbih Counter Online | Digital Zikr Counter Free - Quran Pro</title>
+    <meta name="title" content="Tasbih Counter Online | Digital Zikr Counter Free - Quran Pro">
+    <meta name="description" content="Free Online Tasbih Counter (डिजिटल तस्बीह काउंटर) — SubhanAllah, Alhamdulillah, Allahu Akbar, Astaghfirullah, Durood Sharif ka zikr count karein. Daily target, streak tracker aur auto mode ke saath, bilkul free.">
+    <meta name="description" content="Free Online Tasbih Counter by Quran Pro. SubhanAllah, Alhamdulillah aur Zikr count karein daily target aur streak tracker ke saath. Bilkul free.">
+    <meta name="author" content="Farukh Cheeta">
+    <link rel="canonical" href="https://quran-pro.github.io/tasbih-counter.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://quran-pro.github.io/tasbih-counter.html">
+    <meta property="og:title" content="Tasbih Counter Online | Digital Zikr Counter Free - Quran Pro">
+    <meta property="og:description" content="Free Online Tasbih Counter — SubhanAllah, Alhamdulillah, Allahu Akbar, Astaghfirullah, Durood Sharif ka zikr aasani se count karein. Daily goal, streak aur auto-mode ke saath.">
+    <meta property="og:image" content="https://quran-pro.github.io/og-image.jpg">
+    <meta property="og:site_name" content="Quran Pro">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tasbih Counter Online | Digital Zikr Counter Free - Quran Pro">
+    <meta name="twitter:description" content="Free Online Tasbih Counter — Zikr count karein aasani se, daily target aur streak ke saath. Quran Pro par abhi try karein.">
+    <meta name="twitter:image" content="https://quran-pro.github.io/og-image.jpg">
+
+    <!-- Icons & Styling -->
+    <link rel="icon" type="image/png" href="https://quran-pro.github.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://quran-pro.github.io/favicon.png">
+    <meta name="theme-color" content="#070b13">
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Tasbih Counter - Quran Pro",
+      "url": "https://quran-pro.github.io/tasbih-counter.html",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "Web Browser",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+      "description": "Free online digital Tasbih (Zikr) Counter with daily target, streak tracker and auto-mode for SubhanAllah, Alhamdulillah, Allahu Akbar, Astaghfirullah and Durood Sharif.",
+      "inLanguage": "hi",
+      "isPartOf": { "@type": "WebSite", "name": "Quran Pro", "url": "https://quran-pro.github.io/" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://quran-pro.github.io/" },
+        { "@type": "ListItem", "position": 2, "name": "Tasbih Counter", "item": "https://quran-pro.github.io/tasbih-counter.html" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Online Tasbih Counter kya hai?", "acceptedAnswer": { "@type": "Answer", "text": "Online Tasbih Counter ek digital tool hai jisse aap SubhanAllah, Alhamdulillah, Allahu Akbar jaise zikr ko mobile ya computer par gin sakte hain, bina physical tasbih ke." } },
+        { "@type": "Question", "name": "Kya Tasbih Counter free hai?", "acceptedAnswer": { "@type": "Answer", "text": "Ji haan, Quran Pro ka Tasbih Counter bilkul free hai aur ismein koi login ya download ki zaroorat nahi hai." } },
+        { "@type": "Question", "name": "Kya mera zikr count save rehta hai?", "acceptedAnswer": { "@type": "Answer", "text": "Ji haan, aapka count, streak aur daily progress automatically aapke browser mein save ho jata hai, taaki agli baar aane par bhi wahi se jaari rakh sakein." } },
+        { "@type": "Question", "name": "Auto Mode kya karta hai?", "acceptedAnswer": { "@type": "Answer", "text": "Auto Mode on karne par ek zikr ka round poora hote hi agla zikr apne aap shuru ho jata hai, jisse lagataar wazifa karna aasan ho jata hai." } }
+      ]
+    }
+    </script>
+
+<style>
+  :root{
+    --bg:#070b13;
+    --card:#131a29;
+    --card-2:#161f30;
+    --teal:#2fd9c0;
+    --teal-dim:#1f8a79;
+    --gold:#e7bf5b;
+    --gold-soft:#f0d78a;
+    --text:#eef2f6;
+    --text-dim:#94a3b8;
+    --border:#22304a;
+    --hero-top:#1e7d63;
+    --hero-bot:#0a3327;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Poppins', sans-serif;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
+  .arabic{font-family:'Amiri', serif; direction:rtl;}
+  .wrap{max-width:760px; margin:0 auto; padding:0 20px 60px;}
+
+  header{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 20px; max-width:760px; margin:0 auto;
+  }
+  .logo{font-weight:800; font-size:1.35rem; letter-spacing:-0.02em;}
+  .logo span:first-child{color:var(--teal);}
+  .logo span:last-child{color:var(--text);}
+  .back-link{
+    color:var(--text-dim); text-decoration:none; font-size:0.85rem; font-weight:500;
+    display:flex; align-items:center; gap:6px; padding:8px 14px;
+    border:1px solid var(--border); border-radius:999px; background:none; cursor:pointer;
+  }
+  .back-link:hover{border-color:var(--teal); color:var(--teal);}
+
+  .hero{
+    background:linear-gradient(160deg, var(--hero-top) 0%, var(--hero-bot) 100%);
+    border-radius:28px; padding:40px 28px 30px; text-align:center;
+    max-width:760px; margin:6px auto 26px; position:relative; overflow:hidden;
+  }
+  .hero::before{
+    content:""; position:absolute; inset:0;
+    background:radial-gradient(circle at 50% -10%, rgba(255,255,255,0.10), transparent 60%);
+    pointer-events:none;
+  }
+  .hero-eyebrow{font-size:0.72rem; letter-spacing:0.18em; color:var(--gold-soft); font-weight:600; text-transform:uppercase;}
+  .hero-arabic{font-family:'Amiri', serif; font-size:3.2rem; color:var(--gold); margin:10px 0 4px; text-shadow:0 4px 24px rgba(231,191,91,0.25);}
+  .hero h1{font-size:1.4rem; font-weight:700; margin-bottom:6px;}
+  .hero p{font-size:0.8rem; letter-spacing:0.12em; color:rgba(238,242,246,0.65); text-transform:uppercase; font-weight:500;}
+
+  .section-label{display:flex; align-items:center; gap:12px; margin:0 0 16px;}
+  .section-label span{font-size:0.78rem; letter-spacing:0.16em; color:var(--text-dim); font-weight:700; text-transform:uppercase; white-space:nowrap;}
+  .section-label i{flex:1; height:1px; background:linear-gradient(90deg, var(--teal-dim), transparent);}
+
+  .card{
+    background:var(--card); border:1px solid var(--border); border-radius:18px;
+    padding:20px; margin-bottom:28px;
+  }
+  .card-head{display:flex; align-items:center; justify-content:space-between; margin-bottom:14px;}
+  .card-title{font-weight:700; font-size:0.92rem; display:flex; align-items:center; gap:8px;}
+  .card-title i{color:var(--teal);}
+  .edit-icon{color:var(--text-dim); cursor:pointer; padding:6px; background:none; border:none; font-size:0.9rem;}
+  .edit-icon:hover{color:var(--teal);}
+
+  /* Daily goal */
+  #daily-progress-track{height:10px; background:var(--card-2); border-radius:10px; overflow:hidden;}
+  #daily-progress-bar{height:100%; width:0%; background:linear-gradient(90deg, var(--teal-dim), var(--gold)); border-radius:10px; transition:width .4s ease;}
+  .card-foot{display:flex; justify-content:space-between; margin-top:10px; font-size:0.78rem; color:var(--text-dim);}
+  .card-foot b{color:var(--gold-soft);}
+
+  /* Dhikr pills */
+  #dhikr-pill-row{display:flex; flex-wrap:wrap; gap:10px;}
+  .dhikr-pill{
+    padding:9px 16px; border-radius:999px; font-size:0.8rem; font-weight:600;
+    background:var(--card-2); border:1px solid var(--border); color:var(--text-dim); cursor:pointer; white-space:nowrap;
+  }
+  .dhikr-pill.active{background:rgba(47,217,192,0.14); border-color:var(--teal); color:var(--teal);}
+  #auto-mode-toggle{
+    display:flex; align-items:center; gap:6px; font-size:0.7rem; font-weight:700;
+    padding:6px 12px; border-radius:999px; background:var(--card-2);
+    border:1px solid var(--border); color:var(--text-dim); cursor:pointer; white-space:nowrap;
+  }
+  #auto-mode-toggle.active{background:rgba(231,191,91,0.12); border-color:var(--gold); color:var(--gold-soft);}
+  #auto-mode-toggle.active i{animation:autoSpin 1.6s linear infinite;}
+  @keyframes autoSpin{from{transform:rotate(0deg);} to{transform:rotate(360deg);}}
+  #auto-mode-hint{display:none; font-size:0.76rem; color:var(--text-dim); margin-top:14px; padding-top:14px; border-top:1px dashed var(--border);}
+  #auto-mode-hint.show{display:block;}
+
+  /* Main counter */
+  #tasbih-dhikr-arabic{font-family:'Amiri', serif; font-size:1.7rem; color:var(--gold);}
+  #tasbih-dhikr-label{font-size:0.85rem; color:var(--text-dim); margin-bottom:8px;}
+  #tasbih-ring-wrap{position:relative; width:220px; height:220px; margin:10px auto;}
+  #tasbih-ring-wrap svg{width:100%; height:100%; transform:rotate(-90deg);}
+  #tasbih-progress-track{fill:none; stroke:var(--card-2); stroke-width:12;}
+  #tasbih-progress-ring{fill:none; stroke:var(--teal); stroke-width:12; stroke-linecap:round; transition:stroke-dashoffset .3s ease;}
+  #tasbih-display{position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); font-size:3.4rem; font-weight:800; color:var(--text);}
+  #tasbih-target-label{color:var(--text-dim); font-size:0.8rem; margin-bottom:18px;}
+  #tasbih-main-btn{
+    width:150px; height:150px; border-radius:50%; margin:0 auto;
+    background:linear-gradient(160deg, var(--hero-top) 0%, var(--hero-bot) 100%); color:var(--text);
+    font-size:1.05rem; font-weight:700; letter-spacing:1px; border:none;
+    outline:4px solid rgba(47,217,192,0.10); outline-offset:6px; cursor:pointer;
+    box-shadow:0 20px 40px rgba(0,0,0,0.4), 0 0 30px rgba(31,138,121,0.5);
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;
+    animation:tasbihBtnPulse 2.4s ease-in-out infinite; font-family:inherit;
+  }
+  #tasbih-main-btn:active{transform:scale(0.95);}
+  @keyframes tasbihBtnPulse{
+    0%,100%{box-shadow:0 20px 40px rgba(0,0,0,0.4), 0 0 30px rgba(31,138,121,0.5);}
+    50%{box-shadow:0 20px 40px rgba(0,0,0,0.4), 0 0 45px rgba(31,138,121,0.85);}
+  }
+  #tasbih-main-btn i{font-size:2.2rem; color:var(--gold-soft);}
+  .outline-btn{
+    padding:10px 18px; border-radius:999px; border:1px solid var(--border);
+    background:var(--card-2); color:var(--text); display:flex; align-items:center;
+    gap:6px; font-size:0.78rem; cursor:pointer; font-family:inherit;
+  }
+  .outline-btn:hover{border-color:var(--teal); color:var(--teal);}
+  #tasbih-counter-card.round-complete-flash{animation:roundFlash .9s ease;}
+  @keyframes roundFlash{0%,100%{box-shadow:none;} 30%{box-shadow:0 0 0 4px rgba(231,191,91,0.4);}}
+
+  /* Stats */
+  #tasbih-stats-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:28px;}
+  .stat-box{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:16px 8px; text-align:center;}
+  .stat-val{font-size:1.4rem; font-weight:800; color:var(--teal);}
+  .stat-lbl{font-size:0.7rem; color:var(--text-dim); margin-top:4px;}
+
+  /* Duas */
+  .duas-card p{color:var(--text-dim); padding:5px 0; font-size:0.88rem;}
+  .duas-card b{color:var(--gold-soft);}
+
+  /* Banners */
+  #tasbih-celebration, #tasbih-next-banner{
+    position:fixed; top:20px; left:50%; transform:translateX(-50%) translateY(-30px);
+    padding:12px 22px; border-radius:999px; font-weight:700; font-size:0.85rem;
+    box-shadow:0 15px 30px rgba(0,0,0,0.4); z-index:10000; opacity:0; pointer-events:none;
+  }
+  #tasbih-celebration{background:linear-gradient(135deg, var(--gold), var(--gold-soft)); color:#1a2332;}
+  #tasbih-next-banner{background:linear-gradient(135deg, var(--teal-dim), var(--teal)); color:#08201b; font-weight:600;}
+  #tasbih-celebration.show, #tasbih-next-banner.show{animation:celebrationPop 2.5s ease forwards;}
+  @keyframes celebrationPop{
+    0%{opacity:0; transform:translateX(-50%) translateY(-30px);}
+    15%{opacity:1; transform:translateX(-50%) translateY(0);}
+    85%{opacity:1; transform:translateX(-50%) translateY(0);}
+    100%{opacity:0; transform:translateX(-50%) translateY(-20px);}
+  }
+
+  /* SEO content */
+  .seo-content{margin:0 0 10px;}
+  .seo-content h2{font-size:1.05rem; color:var(--text); margin:0 0 12px; font-weight:700;}
+  .seo-content h3{font-size:0.95rem; color:var(--gold-soft); margin:16px 0 8px; font-weight:600;}
+  .seo-content p{font-size:0.86rem; line-height:1.8; color:var(--text-dim); margin-bottom:10px;}
+  .seo-content ul{padding-left:20px; margin-bottom:12px;}
+  .seo-content li{font-size:0.86rem; line-height:1.75; color:var(--text-dim); margin-bottom:6px;}
+  .faq-item{background:var(--card-2); border:1px solid var(--border); border-radius:14px; padding:14px 16px; margin-bottom:10px;}
+  .faq-item h3{color:var(--teal); font-size:0.9rem; margin:0 0 6px;}
+  .faq-item p{margin:0; font-size:0.84rem; color:var(--text-dim);}
+
+  .internal-links{display:flex; gap:12px; flex-wrap:wrap; margin:6px 0 10px;}
+  .internal-links a{
+    background:var(--card); border:1px solid var(--border); padding:10px 16px;
+    border-radius:999px; font-size:0.82rem; font-weight:600; color:var(--teal);
+    display:flex; align-items:center; gap:6px; text-decoration:none;
+  }
+  .internal-links a:hover{border-color:var(--teal);}
+
+  footer{text-align:center; color:var(--text-dim); font-size:0.75rem; padding:30px 20px 10px;}
+
+  @media (max-width:480px){
+    .hero-arabic{font-size:2.4rem;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    #tasbih-main-btn{animation:none;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><span>Quran</span><span>Pro</span></div>
+  <a class="back-link" href="index.html">← होम</a>
+</header>
+
+<div class="wrap">
+
+  <section class="hero">
+    <div class="hero-eyebrow">डिजिटल ज़िक्र काउंटर</div>
+    <div class="hero-arabic">التسبيح</div>
+    <h1>Tasbih Counter Online - Quran Pro</h1>
+    <p>तस्बीह काउंटर — Daily Target &amp; Streak Tracker</p>
+</section>
+
+
+  <div id="tasbih-celebration"><i class="fas fa-star"></i> आज का लक्ष्य पूरा हुआ! MashaAllah 🎉</div>
+  <div id="tasbih-next-banner"><i class="fas fa-arrow-right"></i> <span id="tasbih-next-text"></span></div>
+
+  <div class="section-label"><span>आज का लक्ष्य</span><i></i></div>
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><i class="fas fa-bullseye"></i> Daily Goal</div>
+      <button class="edit-icon" onclick="editDailyGoal()" title="Target badlein"><i class="fas fa-pen"></i></button>
+    </div>
+    <div id="daily-progress-track"><div id="daily-progress-bar"></div></div>
+    <div class="card-foot">
+      <span id="daily-progress-text">0 / 100</span>
+      <span><i class="fas fa-fire" style="color:var(--gold);"></i> Streak: <b id="stat-streak">0</b> din</span>
+    </div>
+  </div>
+
+  <div class="section-label"><span>ज़िक्र चुनें</span><i></i></div>
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><i class="fas fa-hand-sparkles"></i> Zikr चुनें</div>
+      <div id="auto-mode-toggle" onclick="toggleAutoMode()"><i class="fas fa-sync-alt"></i> ऑटो मोड</div>
+    </div>
+    <div id="dhikr-pill-row"></div>
+    <div id="auto-mode-hint">एक राउंड पूरा होते ही अगला ज़िक्र अपने आप शुरू हो जाएगा</div>
+  </div>
+
+  <div class="section-label"><span>ज़िक्र गिनें — टैप करें</span><i></i></div>
+  <div id="tasbih-counter-card" class="card" style="text-align:center;">
+    <div id="tasbih-dhikr-arabic"></div>
+    <div id="tasbih-dhikr-label"></div>
+
+    <div id="tasbih-ring-wrap">
+      <svg viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="90" id="tasbih-progress-track"></circle>
+        <circle cx="100" cy="100" r="90" id="tasbih-progress-ring"></circle>
+      </svg>
+      <div id="tasbih-display">0</div>
+    </div>
+
+    <div id="tasbih-target-label">लक्ष्य: 33</div>
+
+    <button onclick="tasbihCount()" id="tasbih-main-btn" aria-label="Count Zikr">
+    <i class="fas fa-fingerprint" aria-hidden="true"></i>
+    ZIKR
+</button>
+
+    <div style="margin-top:22px; display:flex; justify-content:center; gap:12px;">
+      <button onclick="resetTasbih()" class="outline-btn"><i class="fas fa-undo-alt"></i> Round Reset</button>
+      <button onclick="editRoundTarget()" class="outline-btn"><i class="fas fa-sliders-h"></i> Target</button>
+    </div>
+  </div>
+
+  <div class="section-label"><span>आपकी प्रगति</span><i></i></div>
+  <div id="tasbih-stats-grid">
+    <div class="stat-box"><div class="stat-val" id="stat-today">0</div><div class="stat-lbl">आज</div></div>
+    <div class="stat-box"><div class="stat-val" id="stat-lifetime">0</div><div class="stat-lbl">कुल (Lifetime)</div></div>
+    <div class="stat-box"><div class="stat-val" id="stat-rounds">0</div><div class="stat-lbl">राउंड (आज)</div></div>
+  </div>
+
+  <div class="section-label"><span>मशहूर छोटी दुआएं</span><i></i></div>
+  <div class="card duas-card">
+    <p><b>SubhanAllah × 33</b> — <span class="arabic">سبحان الله</span></p>
+    <p><b>Alhamdulillah × 33</b> — <span class="arabic">الحمد لله</span></p>
+    <p><b>Allahu Akbar × 33</b> — <span class="arabic">الله أكبر</span></p>
+    <p><b>Astaghfirullah × 33</b> — <span class="arabic">أستغفر الله</span></p>
+    <p><b>La ilaha illallah × 33</b> — <span class="arabic">لا إله إلا الله</span></p>
+  </div>
+
+  <div class="section-label"><span>Tasbih Counter के बारे में</span><i></i></div>
+  <div class="seo-content">
+    <h2>Online Tasbih Counter क्या है?</h2>
+    <p>Tasbih Counter ek digital zikr-ginti ka tool hai jo Quran Pro ne khaas taur par un musalmano ke liye banaya hai jo apna zikr, wazifa ya tasbih physical dane wali tasbih ke bina bhi asaani se count karna chahte hain. Chahe aap ghar par ho, safar mein ho ya office mein — bas ek tap se aap SubhanAllah, Alhamdulillah, Allahu Akbar, Astaghfirullah, La ilaha illallah ya Durood Sharif jaise kalimat ka zikr shuru kar sakte hain aur is Online Tasbih Counter se apni ginti record kar sakte hain. Ye tool bilkul free hai aur ismein na koi app download karni padti hai, na koi sign-up ki zaroorat hai — bas browser kholiye aur zikr shuru kar dijiye.</p>
+
+    <h2>Is Digital Tasbih Counter ko istemal karne ka tarika</h2>
+    <p>Sabse pehle upar diye gaye "ज़िक्र चुनें" section se apna pasandeeda kalima chunein. Uske baad har baar zikr padhne par bade gol button par tap karein — har tap par counter automatically badh jayega aur ring progress bhi update hoti rahegi। Jab aapka round (jaise 33 ya 100) poora ho jata hai, to app khud-ba-khud round reset kar deta hai aur agar "Auto Mode" on hai to agla zikr apne aap shuru ho jata hai, jisse lagataar wazifa karna aur bhi asaan ho jata hai।</p>
+
+    <h3>Daily Target aur Streak Tracker</h3>
+    <p>Ye Tasbih Counter sirf ginti tak mehdood nahi hai — ismein aap apna roz ka target bhi set kar sakte hain, jaise "har din 100 baar zikr karna hai"। Jab bhi aap apna daily goal poora karte hain, app ek mubarakbaad ka message dikhata hai aur aapki "Streak" (lagataar din) ko bhi track karta hai। Isse aapko rozana zikr karne ki aadat banane mein madad milti hai aur aap apni ibadat ki pragati bhi dekh sakte hain।</p>
+
+    <h3>Kyun istemal karein Digital Tasbih?</h3>
+    <ul>
+      <li>Bilkul free, koi download ya login zaroori nahi</li>
+      <li>Mobile aur computer, dono par kaam karta hai</li>
+      <li>Aapka data safely aapke browser mein save rehta hai</li>
+      <li>Daily goal, streak aur lifetime count track hote hain</li>
+      <li>Auto Mode se ek se zyada zikr lagataar padhna asaan</li>
+      <li>Simple, saaf aur distraction-free design</li>
+    </ul>
+
+    <h2>Zikr ki Fazilat (Importance)</h2>
+    <p>Allah ke zikr ka bayaan Quran Sharif mein baar baar aaya hai। Zikr karne se dil ko sukoon milta hai aur insaan Allah ke qareeb hota hai। SubhanAllah, Alhamdulillah, Allahu Akbar aur Astaghfirullah jaise kalimaat ko roz padhna sunnat bhi hai aur inki bohot fazilat bhi bayaan ki gayi hai। Isi wajah se Quran Pro ne ye Online Tasbih Counter banaya hai, taaki har koi asaani se apna rozana ka zikr mukammal kar sake।</p>
+
+    <h2>FAQs — Aksar Poochhe Jaane Wale Sawal</h2>
+    <div class="faq-item"><h3>Online Tasbih Counter kya hai?</h3><p>Ye ek digital tool hai jisse aap SubhanAllah, Alhamdulillah, Allahu Akbar jaise zikr ko mobile ya computer par gin sakte hain, bina physical tasbih ke।</p></div>
+    <div class="faq-item"><h3>Kya Tasbih Counter free hai?</h3><p>Ji haan, Quran Pro ka Tasbih Counter bilkul free hai aur ismein koi login ya download ki zaroorat nahi hai।</p></div>
+    <div class="faq-item"><h3>Kya mera zikr count save rehta hai?</h3><p>Ji haan, aapka count, streak aur daily progress automatically aapke browser mein save ho jata hai, taaki agli baar aane par bhi wahi se jaari rakh sakein।</p></div>
+    <div class="faq-item"><h3>Auto Mode kya karta hai?</h3><p>Auto Mode on karne par ek zikr ka round poora hote hi agla zikr apne aap shuru ho jata hai, jisse lagataar wazifa karna aasan ho jata hai।</p></div>
+  </div>
+
+  <div class="internal-links">
+    <a href="index.html"><i class="fas fa-home"></i> Quran Pro Home</a>
+    <a href="namaz-guide-full.html"><i class="fas fa-mosque"></i> Namaz Ka Tarika</a>
+  </div>
+
+</div>
+
+<footer>QuranPro • Tasbih Counter</footer>
+
+<script>
+    // ---------- Tasbih Counter: Modular + Daily Target ----------
+    const dhikrOptions = [
+        { key: 'subhanallah', label: 'SubhanAllah', ar: 'سُبْحَانَ اللّٰه' },
+        { key: 'alhamdulillah', label: 'Alhamdulillah', ar: 'اَلْحَمْدُ لِلّٰه' },
+        { key: 'allahuakbar', label: 'Allahu Akbar', ar: 'اَللّٰهُ أَكْبَر' },
+        { key: 'astaghfirullah', label: 'Astaghfirullah', ar: 'أَسْتَغْفِرُ اللّٰه' },
+        { key: 'lailaha', label: 'La ilaha illallah', ar: 'لَا إِلٰهَ إِلَّا اللّٰه' },
+        { key: 'darood', label: 'Durood Sharif', ar: 'اَللّٰهُمَّ صَلِّ عَلَى مُحَمَّد' }
+    ];
+
+    function todayStr() {
+        return new Date().toISOString().slice(0, 10);
+    }
+
+    function getTasbihState() {
+        let daily = JSON.parse(localStorage.getItem('tasbih_daily') || 'null');
+        if (!daily || daily.date !== todayStr()) {
+            daily = { date: todayStr(), count: 0 };
+        }
+        let legacyMigrated = localStorage.getItem('tasbih_migrated');
+        let lifetime = parseInt(localStorage.getItem('tasbih_lifetime'));
+        if (!legacyMigrated) {
+            const legacy = parseInt(localStorage.getItem('tasbihCount')) || 0;
+            lifetime = (lifetime || 0) + legacy;
+            localStorage.setItem('tasbih_migrated', '1');
+        }
+        return {
+            selected: localStorage.getItem('tasbih_selected') || 'subhanallah',
+            target: parseInt(localStorage.getItem('tasbih_target')) || 33,
+            dailyGoal: parseInt(localStorage.getItem('tasbih_dailyGoal')) || 100,
+            round: parseInt(localStorage.getItem('tasbih_round')) || 0,
+            lifetime: lifetime || 0,
+            streak: parseInt(localStorage.getItem('tasbih_streak')) || 0,
+            lastGoalDate: localStorage.getItem('tasbih_lastGoalDate') || '',
+            autoMode: localStorage.getItem('tasbih_autoMode') === '1',
+            daily
+        };
+    }
+
+    function saveTasbihState(s) {
+        localStorage.setItem('tasbih_selected', s.selected);
+        localStorage.setItem('tasbih_target', s.target);
+        localStorage.setItem('tasbih_dailyGoal', s.dailyGoal);
+        localStorage.setItem('tasbih_round', s.round);
+        localStorage.setItem('tasbih_lifetime', s.lifetime);
+        localStorage.setItem('tasbih_streak', s.streak);
+        localStorage.setItem('tasbih_lastGoalDate', s.lastGoalDate);
+        localStorage.setItem('tasbih_autoMode', s.autoMode ? '1' : '0');
+        localStorage.setItem('tasbih_daily', JSON.stringify(s.daily));
+    }
+
+    function toggleAutoMode() {
+        const s = getTasbihState();
+        s.autoMode = !s.autoMode;
+        saveTasbihState(s);
+        renderTasbihUI();
+    }
+
+    function getNextDhikrKey(currentKey) {
+        const idx = dhikrOptions.findIndex(d => d.key === currentKey);
+        const nextIdx = (idx + 1) % dhikrOptions.length;
+        return dhikrOptions[nextIdx].key;
+    }
+
+    function showNextDhikrBanner(nextOpt, target) {
+        const banner = document.getElementById('tasbih-next-banner');
+        const text = document.getElementById('tasbih-next-text');
+        if (!banner || !text) return;
+        text.innerText = `अगला: ${nextOpt.label} — ${target} बार`;
+        banner.classList.remove('show');
+        void banner.offsetWidth;
+        banner.classList.add('show');
+    }
+
+    function buildDhikrPills() {
+        const row = document.getElementById('dhikr-pill-row');
+        if (!row || row.children.length) return;
+        row.innerHTML = dhikrOptions.map(d =>
+            `<div class="dhikr-pill" data-key="${d.key}" onclick="selectDhikr('${d.key}')">${d.label}</div>`
+        ).join('');
+    }
+
+    function renderTasbihUI() {
+        buildDhikrPills();
+        const s = getTasbihState();
+        const opt = dhikrOptions.find(d => d.key === s.selected) || dhikrOptions[0];
+
+        const disp = document.getElementById('tasbih-display');
+        if (disp) disp.innerText = s.round;
+
+        const lbl = document.getElementById('tasbih-dhikr-label');
+        if (lbl) lbl.innerText = opt.label;
+        const ar = document.getElementById('tasbih-dhikr-arabic');
+        if (ar) ar.innerText = opt.ar;
+        const tLbl = document.getElementById('tasbih-target-label');
+        if (tLbl) tLbl.innerText = `लक्ष्य: ${s.target}`;
+
+        const pct = Math.min(100, Math.round((s.round / s.target) * 100));
+        const ring = document.getElementById('tasbih-progress-ring');
+        if (ring) {
+            const circumference = 2 * Math.PI * 90;
+            ring.style.strokeDasharray = circumference;
+            ring.style.strokeDashoffset = circumference - (pct / 100) * circumference;
+        }
+
+        const statToday = document.getElementById('stat-today');
+        if (statToday) statToday.innerText = s.daily.count;
+        const statLifetime = document.getElementById('stat-lifetime');
+        if (statLifetime) statLifetime.innerText = s.lifetime;
+        const statStreak = document.getElementById('stat-streak');
+        if (statStreak) statStreak.innerText = s.streak;
+        const statRounds = document.getElementById('stat-rounds');
+        if (statRounds) statRounds.innerText = Math.floor(s.daily.count / s.target);
+
+        const dailyPct = Math.min(100, Math.round((s.daily.count / s.dailyGoal) * 100));
+        const bar = document.getElementById('daily-progress-bar');
+        if (bar) bar.style.width = dailyPct + '%';
+        const dailyText = document.getElementById('daily-progress-text');
+        if (dailyText) dailyText.innerText = `${s.daily.count} / ${s.dailyGoal}`;
+
+        document.querySelectorAll('.dhikr-pill').forEach(p => {
+            p.classList.toggle('active', p.dataset.key === s.selected);
+        });
+
+        const autoBtn = document.getElementById('auto-mode-toggle');
+        if (autoBtn) autoBtn.classList.toggle('active', s.autoMode);
+        const autoHint = document.getElementById('auto-mode-hint');
+        if (autoHint) autoHint.classList.toggle('show', s.autoMode);
+    }
+
+    function selectDhikr(key) {
+        const s = getTasbihState();
+        s.selected = key;
+        s.round = 0;
+        saveTasbihState(s);
+        renderTasbihUI();
+    }
+
+    function tasbihCount() {
+        const s = getTasbihState();
+        s.round++;
+        s.lifetime++;
+        s.daily.count++;
+
+        const roundCompleted = s.round >= s.target;
+
+        if (s.daily.count >= s.dailyGoal && s.lastGoalDate !== s.daily.date) {
+            const y = new Date();
+            y.setDate(y.getDate() - 1);
+            const yesterday = y.toISOString().slice(0, 10);
+            const prevStreakDate = localStorage.getItem('tasbih_prevGoalDate') || '';
+            s.streak = (prevStreakDate === yesterday) ? s.streak + 1 : 1;
+            s.lastGoalDate = s.daily.date;
+            localStorage.setItem('tasbih_prevGoalDate', s.daily.date);
+            saveTasbihState(s);
+            renderTasbihUI();
+            showDailyGoalCelebration();
+        } else {
+            saveTasbihState(s);
+            renderTasbihUI();
+        }
+
+        if (window.navigator && window.navigator.vibrate) {
+            window.navigator.vibrate(roundCompleted ? [40, 60, 40, 60, 80] : 40);
+        }
+
+        const btn = document.getElementById('tasbih-main-btn');
+        if (btn) {
+            btn.style.transform = "scale(0.92)";
+            setTimeout(() => btn.style.transform = "scale(1)", 100);
+        }
+
+        if (roundCompleted) {
+            setTimeout(() => {
+                const s2 = getTasbihState();
+                if (s2.autoMode) {
+                    const nextKey = getNextDhikrKey(s2.selected);
+                    const nextOpt = dhikrOptions.find(d => d.key === nextKey);
+                    s2.selected = nextKey;
+                    s2.round = 0;
+                    saveTasbihState(s2);
+                    renderTasbihUI();
+                    flashRoundComplete();
+                    showNextDhikrBanner(nextOpt, s2.target);
+                } else {
+                    s2.round = 0;
+                    saveTasbihState(s2);
+                    renderTasbihUI();
+                    flashRoundComplete();
+                }
+            }, 350);
+        }
+    }
+
+    function flashRoundComplete() {
+        const card = document.getElementById('tasbih-counter-card');
+        if (!card) return;
+        card.classList.add('round-complete-flash');
+        setTimeout(() => card.classList.remove('round-complete-flash'), 900);
+    }
+
+    function showDailyGoalCelebration() {
+        const banner = document.getElementById('tasbih-celebration');
+        if (!banner) return;
+        banner.classList.add('show');
+        setTimeout(() => banner.classList.remove('show'), 2500);
+    }
+
+    function resetTasbih() {
+        const s = getTasbihState();
+        s.round = 0;
+        saveTasbihState(s);
+        renderTasbihUI();
+    }
+
+    function editDailyGoal() {
+        const s = getTasbihState();
+        const val = prompt("रोज़ाना कितनी दुआ/ज़िक्र का लक्ष्य रखना है?", s.dailyGoal);
+        const num = parseInt(val);
+        if (num && num > 0) {
+            s.dailyGoal = num;
+            saveTasbihState(s);
+            renderTasbihUI();
+        }
+    }
+
+    function editRoundTarget() {
+        const s = getTasbihState();
+        const val = prompt("एक राउंड में कितनी बार ज़िक्र करना है? (जैसे 33, 100)", s.target);
+        const num = parseInt(val);
+        if (num && num > 0) {
+            s.target = num;
+            s.round = 0;
+            saveTasbihState(s);
+            renderTasbihUI();
+        }
+    }
+
+    renderTasbihUI();
+</script>
+</body>
+</html>
