@@ -23,7 +23,6 @@
 <meta property="og:description" content="क़ुरआन शरीफ़ का हिंदी-उर्दू अनुवाद, नमाज़ का मुकम्मल तरीका और डिजिटल तस्बीह काउंटर एक ही जगह पर।">
 <meta property="og:image" content="https://quran-pro.github.io/favicon.png">
  <meta property="og:site_name" content="Quran Pro">
-<meta property="og:title" content="Quran Sharif Hindi Tarjuma & Tafsir: Quran Pro">     
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Quran Pro | Quran Hindi Tarjuma, Quran Urdu Me, Namaz Ka Tarika">
@@ -118,7 +117,7 @@
         }
         
         /* Sirf interactive/visual elements par transition — puri site par nahi, taaki app fast feel ho */
-        button, .box, .q-link, .n-btn, #theme-btn, #floating-pin-btn,
+        button, .box, .q-link, #theme-btn, #floating-pin-btn,
         .summary-ayah, .ayah-card, i.fas, i.far, #search-input,
         .quick-btn, a, body, header, .header {
             transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease, opacity 0.25s ease;
@@ -216,7 +215,7 @@
             color: white;
             font-size: 15px;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-            transition: 0.3s ease;
+            transition: all 0.35s cubic-bezier(.4, 0, .2, 1);
         }
         
         #search-input::placeholder {
@@ -227,6 +226,7 @@
             background: rgba(255, 255, 255, 0.2);
             border-color: #f1d27b;
             box-shadow: 0 0 15px rgba(241, 210, 123, 0.5);
+            transform: scale(1.03);
         }
         
         .search-icon {
@@ -325,15 +325,6 @@
             }
         }
         
-        /* Smooth focus animation */
-        #search-input {
-            transition: all 0.35s cubic-bezier(.4, 0, .2, 1);
-        }
-        
-        #search-input:focus {
-            transform: scale(1.03);
-        }
-        
         /* Search Result Animation */
         .search-animate {
             animation: searchFade 0.45s ease forwards;
@@ -372,14 +363,6 @@
             /* स्क्रीन के कोनों से दूरी */
             position: relative;
             z-index: 10;
-        }
-        
-        .highlight-text {
-            background: #ffd54f;
-            color: #000;
-            padding: 2px 6px;
-            border-radius: 5px;
-            font-weight: 600;
         }
         
         @keyframes highlightGlow {
@@ -1133,37 +1116,6 @@
             visibility: visible !important;
         }
         
-           .n-btn { background: rgba(255,255,255,0.05); border: 1px solid var(--primary); color: white; padding: 8px 18px; border-radius: 20px; white-space: nowrap; cursor: pointer; }
-    
-    .step-card { background: var(--box-bg); border-radius: 20px; padding: 20px; margin-bottom: 15px; border-left: 5px solid var(--primary); }
-    .icon-large { font-size: 3.5rem; color: var(--primary); margin-bottom: 15px; display: block; text-align: center; }
-        
-        .n-btn.active {
-            background: var(--primary);
-            color: white;
-        }
-        
-        .step-img-box {
-            width: 100%;
-            height: 150px;
-            background: #1a2332;
-            border-radius: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 15px;
-            overflow: hidden;
-        }
-        
-        .guide-card {
-            background: var(--box-bg);
-            border-radius: 20px;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-bottom: 4px solid var(--primary);
-        }
-        
-
     </style>
 </head>
 
@@ -1234,9 +1186,9 @@
                 <a onclick="shareApp()" style="cursor:pointer;"><i class="fas fa-share-alt" style="color:var(--accent)"></i></a>
             </div>
             <div class="f-links">
-                <a href="#" onclick="location.reload()">HOME</a>
-                <a href="#">ABOUT</a>
-                <a href="#">CONTACT</a>
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
             </div>
             <div class="arif-tag">Designed by Farukh Cheeta</div>
             <p style="font-size:0.6rem; opacity:0.3; margin-top:10px;">© 2024 QURAN PRO PREMIUM</p>
@@ -1314,120 +1266,13 @@
             <i class="fas fa-thumbtack"></i>
         </div>
 
-         <div id="namaz-view" class="page" style="display:none; padding-bottom: 100px;">
-    
-    <header style="background:var(--box-bg); padding:15px; display:flex; align-items:center; position:sticky; top:0; z-index:1001;">
-        <div onclick="showPage('home-view')" style="cursor:pointer; width:40px; height:40px; display:flex; align-items:center; justify-content:center; margin-right:15px; background:rgba(15,118,110,0.1); border-radius:50%;">
-            <i class="fas fa-arrow-left" style="color:var(--primary); font-size:1.2rem;"></i>
-        </div>
-        <div style="font-weight:700; font-size: 1.1rem;">Namaz Ka Tarika</div>
-    </header>
-
-    <div class="detail-card-hero">
-        <h1 style="font-family:'Amiri'; font-size:2.8rem;">الصلاة</h1>
-        <p>Step-by-Step Complete Guide</p>
-    </div>
-
-    <div class="guide-card" style="margin: 20px;">
-        <h3 style="color: var(--primary); margin-bottom: 15px; text-align: center;"><i class="fas fa-table"></i> नमाज़ रकात टेबल</h3>
-        <div style="overflow-x:auto;">
-            <table class="namaz-table">
-                <thead>
-                    <tr>
-                        <th>Namaz</th>
-                        <th>Sunnat (Pehle)</th>
-                        <th>Farz</th>
-                        <th>Sunnat (Baad)</th>
-                        <th>Nafil</th>
-                        <th>Witr</th>
-                        <th>Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>Fajr (फ़ज्र)</td><td>2</td><td>2</td><td>-</td><td>-</td><td>-</td><td>4</td></tr>
-                    <tr><td>Zuhr (ज़ुहर)</td><td>4</td><td>4</td><td>2</td><td>2</td><td>-</td><td>12</td></tr>
-                    <tr><td>Asr (अस्र)</td><td>4</td><td>4</td><td>-</td><td>-</td><td>-</td><td>8</td></tr>
-                    <tr><td>Maghrib (मग़रिब)</td><td>-</td><td>3</td><td>2</td><td>2</td><td>-</td><td>7</td></tr>
-                    <tr><td>Isha (इशा)</td><td>4</td><td>4</td><td>2</td><td>2</td><td>3</td><td>17</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <div class="guide-card" style="margin: 20px;">
-        <h3 style="color: var(--primary); margin-bottom: 15px; text-align: center;"><i class="fas fa-hands-praying"></i> नमाज़ की नीयत</h3>
-        
-        <div class="namaz-tabs" style="display: flex; gap: 10px; overflow-x: auto; padding-bottom: 10px; margin-bottom: 15px;">
-            <button class="n-btn active" onclick="changeNiyat('fajr', this)">Fajr</button>
-            <button class="n-btn" onclick="changeNiyat('zuhr', this)">Zuhr</button>
-            <button class="n-btn" onclick="changeNiyat('asr', this)">Asr</button>
-            <button class="n-btn" onclick="changeNiyat('maghrib', this)">Maghrib</button>
-            <button class="n-btn" onclick="changeNiyat('isha', this)">Isha</button>
-        </div>
-
-        <div id="niyat-box" style="background: rgba(15,118,110,0.05); padding: 20px; border-radius: 15px; border: 1px solid rgba(15,118,110,0.2);">
-            <h4 id="niyat-title" style="color: var(--accent); margin-bottom: 10px;">फ़ज्र (Fajr) की नीयत</h4>
-            <p id="niyat-urdu" class="arabic-text" style="font-size: 1.5rem; text-align: right; color: var(--text);">نیت کرتا ہوں میں 2 رکعت نماز سنت/فرض فجر کی، واسطے اللہ تعالیٰ کے، منہ میرا کعبہ شریف کی طرف، اللہ اکبر۔</p>
-            <p id="niyat-hindi" style="color: #b0b8c4; margin-top: 10px; line-height: 1.6;">मैं नियत करता हूँ 2 रकात नमाज़ सुन्नत/फ़र्ज़ फ़ज्र की, वास्ते अल्लाह ताला के, मुँह मेरा काबा शरीफ़ की तरफ, अल्लाहु अकबर।</p>
-        </div>
-    </div>
-
-    <div style="margin: 20px;">
-        <h3 style="color: var(--primary); margin-bottom: 15px; text-align: center;"><i class="fas fa-shoe-prints"></i> नमाज़ पढ़ने का तरीका</h3>
-
-        <div class="step-card">
-            <h4 style="color: var(--accent);"><span style="background: var(--primary); color: white; padding: 2px 8px; border-radius: 5px; margin-right: 8px;">1</span>सना (Sana) - तकबीर के बाद</h4>
-            <p class="arabic-text" style="font-size: 1.8rem; margin: 10px 0; color: var(--text);">سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ وَتَبَارَكَ اسْمُكَ وَتَعَالَى جَدُّكَ وَلَا إِلَهَ غَيْرُكَ</p>
-            <p style="color: #b0b8c4;">सुब्हान-कल्लाहुम-म व बिहम्दि-क व तबार-कस्मु-क व तआला जद्दु-क व ला इला-ह ग़ैरु-क</p>
-        </div>
-
-        <div class="step-card">
-            <h4 style="color: var(--accent);"><span style="background: var(--primary); color: white; padding: 2px 8px; border-radius: 5px; margin-right: 8px;">2</span>रुकू (Ruku)</h4>
-            <p style="font-size: 0.85rem; opacity: 0.8; margin-top: 5px;">रुकू में जाते हुए 'अल्लाहु अकबर' कहें और 3, 5 या 7 बार पढ़ें:</p>
-            <p class="arabic-text" style="font-size: 1.8rem; margin: 10px 0; color: var(--text);">سُبْحَانَ رَبِّيَ الْعَظِيمِ</p>
-            <p style="color: #b0b8c4;">सुब्हान रब्बि-यल अज़ीम</p>
-        </div>
-        
-        <div class="step-card">
-            <h4 style="color: var(--accent);"><span style="background: var(--primary); color: white; padding: 2px 8px; border-radius: 5px; margin-right: 8px;">3</span>रुकू से उठते हुए (Qiyam)</h4>
-            <p class="arabic-text" style="font-size: 1.8rem; margin: 10px 0; color: var(--text);">سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ<br><span style="font-size: 1.5rem;">رَبَّنَا لَكَ الْحَمْدُ</span></p>
-            <p style="color: #b0b8c4;">समिअल्लाहु लिमन हमिदह <br> रब्बना ल-कल हम्द</p>
-        </div>
-
-        <div class="step-card">
-            <h4 style="color: var(--accent);"><span style="background: var(--primary); color: white; padding: 2px 8px; border-radius: 5px; margin-right: 8px;">4</span>सजदा (Sajdah)</h4>
-            <p style="font-size: 0.85rem; opacity: 0.8; margin-top: 5px;">सजदे में 'अल्लाहु अकबर' कहते हुए जाएँ और 3 बार पढ़ें:</p>
-            <p class="arabic-text" style="font-size: 1.8rem; margin: 10px 0; color: var(--text);">سُبْحَانَ رَبِّيَ الْأَعْلَى</p>
-            <p style="color: #b0b8c4;">सुब्हान रब्बि-यल आ'ला</p>
-        </div>
-
-        <div class="step-card">
-            <h4 style="color: var(--accent);"><span style="background: var(--primary); color: white; padding: 2px 8px; border-radius: 5px; margin-right: 8px;">5</span>अत्तहिय्यात (Tashahhud)</h4>
-            <p class="arabic-text" style="font-size: 1.5rem; line-height: 2; margin: 10px 0; color: var(--text);">التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ</p>
-            <p style="color: #b0b8c4; font-size: 0.95rem;">अत्तहिय्यातु लिल्लाहि वस्सलवातु वत्तय्यिबातु, अस्सलामु अलै-क अय्युहन-नबिय्यु व रहमतुल्लाहि व बरकातुहू, अस्सलामु अलैना व अला इबादिल्लाहिस्-सालिहीन, अश्हदु अल्ला इला-ह इल्लल्लाहु, व अश्हदु अन्न मुहम्मदन् अब्दुहू व रसूलुह।</p>
-        </div>
-
-        <div class="step-card">
-            <h4 style="color: var(--accent);"><span style="background: var(--primary); color: white; padding: 2px 8px; border-radius: 5px; margin-right: 8px;">6</span>दरूद शरीफ (Darood Ibrahim)</h4>
-            <p class="arabic-text" style="font-size: 1.5rem; line-height: 2; margin: 10px 0; color: var(--text);">اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ</p>
-            <p style="color: #b0b8c4; font-size: 0.95rem;">अल्लाहुम-म स़ल्लि अला मुहम-मदिव् व अला आलि मुहम-मदिन् कमा स़ल्लै-त अला इब्राही-म व अला आलि इब्राही-म इन्न-क हमीदुम-मजीद।</p>
-        </div>
-        
-        <div class="step-card">
-            <h4 style="color: var(--accent);"><span style="background: var(--primary); color: white; padding: 2px 8px; border-radius: 5px; margin-right: 8px;">7</span>दुआ-ए-मासूरा (Dua Masura)</h4>
-            <p class="arabic-text" style="font-size: 1.5rem; line-height: 2; margin: 10px 0; color: var(--text);">اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْمًا كَثِيرًا وَلَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ وَارْحَمْنِي إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ</p>
-            <p style="color: #b0b8c4; font-size: 0.95rem;">अल्लाहुम-म इन्नी ज़लमतु नफ्सी ज़ुल्मन् कसीरंव-व ला यग़्फ़िरुज़-जुनू-ब इल्ला अन्-त फ़ग़्फ़िर्ली मग़्फ़िर-तम् मिन् इन्दि-क वर्हम्नी इन्न-क अन्तल्-ग़फ़ूरुर-रहीम।</p>
-        </div>
-    </div>
-</div>
-
         
     </div>
    
 
     <script>
         // --- Global Variables (सबसे ऊपर) ---
-        const surahs = [{ en: "Al-Fatihah", ar: "الفاتحة", v: "7" }, { en: "Al-Baqarah", ar: "البقرة", v: "286" }, { en: "Aal-e-Imran", ar: "آل عمران", v: "200" }, { en: "An-Nisa", ar: "النساء", v: "176" }, { en: "Al-Ma'idah", ar: "المائدة", v: "120" }, { en: "Al-An'am", ar: "الأنعام", v: "165" }, { en: "Al-A'raf", ar: "الأعراف", v: "206" }, { en: "Al-Anfal", ar: "الأنفال", v: "75" }, { en: "At-Tawbah", ar: "التوبة", v: "129" }, { en: "Yunus", ar: "यونس", v: "109" }, { en: "Hud", ar: "هود", v: "123" }, { en: "Yusuf", ar: "يوسف", v: "111" }, { en: "Ar-Ra'd", ar: "الرعد", v: "43" }, { en: "Ibrahim", ar: "إبراهيم", v: "52" }, { en: "Al-Hijr", ar: "الحجر", v: "99" }, { en: "An-Nahl", ar: "النحل", v: "128" }, { en: "Al-Isra", ar: "الإسراء", v: "111" }, { en: "Al-Kahf", ar: "الكهف", v: "110" }, { en: "Maryam", ar: "مريم", v: "98" }, { en: "Ta-Ha", ar: "طه", v: "135" }, { en: "Al-Anbiya", ar: "الأنبياء", v: "112" }, { en: "Al-Hajj", ar: "الحج", v: "78" }, { en: "Al-Mu'minun", ar: "المؤمنون", v: "118" }, { en: "An-Nur", ar: "النौर", v: "64" }, { en: "Al-Furqan", ar: "الفرقان", v: "77" }, { en: "Ash-Shu'ara", ar: "الشعراء", v: "227" }, { en: "An-Naml", ar: "النمل", v: "93" }, { en: "Al-Qasas", ar: "القصص", v: "88" }, { en: "Al-Ankabut", ar: "العنكبوت", v: "69" }, { en: "Ar-Rum", ar: "الروم", v: "60" }, { en: "Luqman", ar: "لقمان", v: "34" }, { en: "As-Sajdah", ar: "السجدة", v: "30" }, { en: "Al-Ahzab", ar: "الأحزاب", v: "73" }, { en: "Saba", ar: "سبأ", v: "54" }, { en: "Fatir", ar: "فاطر", v: "45" }, { en: "Ya-Sin", ar: "يس", v: "83" }, { en: "As-Saffat", ar: "الصافات", v: "182" }, { en: "Sad", ar: "ص", v: "88" }, { en: "Az-Zumar", ar: "الزمر", v: "75" }, { en: "Ghafir", ar: "غافر", v: "85" }, { en: "Fussilat", ar: "فصلت", v: "54" }, { en: "Ash-Shura", ar: "الشورى", v: "53" }, { en: "Az-Zukhruf", ar: "الزخرف", v: "89" }, { en: "Ad-Dukhan", ar: "الدخان", v: "59" }, { en: "Al-Jathiyah", ar: "الجاثية", v: "37" }, { en: "Al-Ahqaf", ar: "الأحقاف", v: "35" }, { en: "Muhammad", ar: "محمد", v: "38" }, { en: "Al-Fath", ar: "الفتح", v: "29" }, { en: "Al-Hujurat", ar: "الحجرات", v: "18" }, { en: "Qaf", ar: "ق", v: "45" }, { en: "Adh-Dhariyat", ar: "الذاريات", v: "60" }, { en: "At-Tur", ar: "الطور", v: "49" }, { en: "An-Najm", ar: "النجم", v: "62" }, { en: "Al-Qamar", ar: "القمر", v: "55" }, { en: "Ar-Rahman", ar: "الرحمن", v: "78" }, { en: "Al-Waqi'ah", ar: "الواقعة", v: "96" }, { en: "Al-Hadid", ar: "الحديد", v: "29" }, { en: "Al-Mujadila", ar: "المجادلة", v: "22" }, { en: "Al-Hashr", ar: "الحشر", v: "24" }, { en: "Al-Mumtahanah", ar: "الممتحنة", v: "13" }, { en: "As-Saff", ar: "الصف", v: "14" }, { en: "Al-Jumu'ah", ar: "الجمعة", v: "11" }, { en: "Al-Munafiqun", ar: "المنافقون", v: "11" }, { en: "At-Taghabun", ar: "التغابن", v: "18" }, { en: "At-Talaq", ar: "الطلاق", v: "12" }, { en: "At-Tahrim", ar: "التحريم", v: "12" }, { en: "Al-Mulk", ar: "الملك", v: "30" }, { en: "Al-Qalam", ar: "القلم", v: "52" }, { en: "Al-Haqqah", ar: "الحاقة", v: "52" }, { en: "Al-Ma'arij", ar: "المعارج", v: "44" }, { en: "Nuh", ar: "نوح", v: "28" }, { en: "Al-Jinn", ar: "الجن", v: "28" }, { en: "Al-Muzzammil", ar: "المزمل", v: "20" }, { en: "Al-Muddaththir", ar: "المدثر", v: "56" }, { en: "Al-Qiyamah", ar: "القيامة", v: "40" }, { en: "Al-Insan", ar: "الإنسان", v: "31" }, { en: "Al-Mursalat", ar: "المرسلات", v: "50" }, { en: "An-Naba", ar: "النبأ", v: "40" }, { en: "An-Nazi'at", ar: "النازعات", v: "46" }, { en: "Abasa", ar: "عبस", v: "42" }, { en: "At-Takwir", ar: "التكوير", v: "29" }, { en: "Al-Infitar", ar: "الانفطار", v: "19" }, { en: "Al-Mutaffifin", ar: "المطففين", v: "36" }, { en: "Al-Inshiqaq", ar: "الانشقاق", v: "25" }, { en: "Al-Buruj", ar: "البروج", v: "22" }, { en: "At-Tariq", ar: "الطارق", v: "17" }, { en: "Al-A'la", ar: "الأعلى", v: "19" }, { en: "Al-Ghashiyah", ar: "الغاشية", v: "26" }, { en: "Al-Fajr", ar: "الفجر", v: "30" }, { en: "Al-Balad", ar: "البلد", v: "20" }, { en: "Ash-Shams", ar: "الشمس", v: "15" }, { en: "Al-Layl", ar: "الليل", v: "21" }, { en: "Ad-Duha", ar: "الضحى", v: "11" }, { en: "Ash-Sharh", ar: "الشرح", v: "8" }, { en: "At-Tin", ar: "التين", v: "8" }, { en: "Al-Alaq", ar: "العلق", v: "19" }, { en: "Al-Qadr", ar: "القدر", v: "5" }, { en: "Al-Bayyinah", ar: "البينة", v: "8" }, { en: "Az-Zalzalah", ar: "الزلزلة", v: "8" }, { en: "Al-Adiyat", ar: "العاديات", v: "11" }, { en: "Al-Qari'ah", ar: "القارعة", v: "11" }, { en: "At-Takathur", ar: "التकाथर", v: "8" }, { en: "Al-Asr", ar: "العصر", v: "3" }, { en: "Al-Humazah", ar: "الهمزة", v: "9" }, { en: "Al-Fil", ar: "الفيل", v: "5" }, { en: "Quraysh", ar: "قريश", v: "4" }, { en: "Al-Ma'un", ar: "الماعون", v: "7" }, { en: "Al-Kawthar", ar: "الकोثر", v: "3" }, { en: "Al-Kafirun", ar: "الكافرون", v: "6" }, { en: "An-Nasr", ar: "النصر", v: "3" }, { en: "Al-Masad", ar: "المسد", v: "5" }, { en: "Al-Ikhlas", ar: "الإخلاص", v: "4" }, { en: "Al-Falaq", ar: "الفلق", v: "5" }, { en: "An-Nas", ar: "الناس", v: "6" }];
+        const surahs = [{ en: "Al-Fatihah", ar: "الفاتحة", v: "7" }, { en: "Al-Baqarah", ar: "البقرة", v: "286" }, { en: "Aal-e-Imran", ar: "آل عمران", v: "200" }, { en: "An-Nisa", ar: "النساء", v: "176" }, { en: "Al-Ma'idah", ar: "المائدة", v: "120" }, { en: "Al-An'am", ar: "الأنعام", v: "165" }, { en: "Al-A'raf", ar: "الأعراف", v: "206" }, { en: "Al-Anfal", ar: "الأنفال", v: "75" }, { en: "At-Tawbah", ar: "التوبة", v: "129" }, { en: "Yunus", ar: "يونس", v: "109" }, { en: "Hud", ar: "هود", v: "123" }, { en: "Yusuf", ar: "يوسف", v: "111" }, { en: "Ar-Ra'd", ar: "الرعد", v: "43" }, { en: "Ibrahim", ar: "إبراهيم", v: "52" }, { en: "Al-Hijr", ar: "الحجر", v: "99" }, { en: "An-Nahl", ar: "النحل", v: "128" }, { en: "Al-Isra", ar: "الإسراء", v: "111" }, { en: "Al-Kahf", ar: "الكهف", v: "110" }, { en: "Maryam", ar: "مريم", v: "98" }, { en: "Ta-Ha", ar: "طه", v: "135" }, { en: "Al-Anbiya", ar: "الأنبياء", v: "112" }, { en: "Al-Hajj", ar: "الحج", v: "78" }, { en: "Al-Mu'minun", ar: "المؤمنون", v: "118" }, { en: "An-Nur", ar: "النور", v: "64" }, { en: "Al-Furqan", ar: "الفرقان", v: "77" }, { en: "Ash-Shu'ara", ar: "الشعراء", v: "227" }, { en: "An-Naml", ar: "النمل", v: "93" }, { en: "Al-Qasas", ar: "القصص", v: "88" }, { en: "Al-Ankabut", ar: "العنكبوت", v: "69" }, { en: "Ar-Rum", ar: "الروم", v: "60" }, { en: "Luqman", ar: "لقمان", v: "34" }, { en: "As-Sajdah", ar: "السجدة", v: "30" }, { en: "Al-Ahzab", ar: "الأحزاب", v: "73" }, { en: "Saba", ar: "سبأ", v: "54" }, { en: "Fatir", ar: "فاطر", v: "45" }, { en: "Ya-Sin", ar: "يس", v: "83" }, { en: "As-Saffat", ar: "الصافات", v: "182" }, { en: "Sad", ar: "ص", v: "88" }, { en: "Az-Zumar", ar: "الزمر", v: "75" }, { en: "Ghafir", ar: "غافر", v: "85" }, { en: "Fussilat", ar: "فصلت", v: "54" }, { en: "Ash-Shura", ar: "الشورى", v: "53" }, { en: "Az-Zukhruf", ar: "الزخرف", v: "89" }, { en: "Ad-Dukhan", ar: "الدخان", v: "59" }, { en: "Al-Jathiyah", ar: "الجاثية", v: "37" }, { en: "Al-Ahqaf", ar: "الأحقاف", v: "35" }, { en: "Muhammad", ar: "محمد", v: "38" }, { en: "Al-Fath", ar: "الفتح", v: "29" }, { en: "Al-Hujurat", ar: "الحجرات", v: "18" }, { en: "Qaf", ar: "ق", v: "45" }, { en: "Adh-Dhariyat", ar: "الذاريات", v: "60" }, { en: "At-Tur", ar: "الطور", v: "49" }, { en: "An-Najm", ar: "النجم", v: "62" }, { en: "Al-Qamar", ar: "القمر", v: "55" }, { en: "Ar-Rahman", ar: "الرحمن", v: "78" }, { en: "Al-Waqi'ah", ar: "الواقعة", v: "96" }, { en: "Al-Hadid", ar: "الحديد", v: "29" }, { en: "Al-Mujadila", ar: "المجادلة", v: "22" }, { en: "Al-Hashr", ar: "الحشر", v: "24" }, { en: "Al-Mumtahanah", ar: "الممتحنة", v: "13" }, { en: "As-Saff", ar: "الصف", v: "14" }, { en: "Al-Jumu'ah", ar: "الجمعة", v: "11" }, { en: "Al-Munafiqun", ar: "المنافقون", v: "11" }, { en: "At-Taghabun", ar: "التغابن", v: "18" }, { en: "At-Talaq", ar: "الطلاق", v: "12" }, { en: "At-Tahrim", ar: "التحريم", v: "12" }, { en: "Al-Mulk", ar: "الملك", v: "30" }, { en: "Al-Qalam", ar: "القلم", v: "52" }, { en: "Al-Haqqah", ar: "الحاقة", v: "52" }, { en: "Al-Ma'arij", ar: "المعارج", v: "44" }, { en: "Nuh", ar: "نوح", v: "28" }, { en: "Al-Jinn", ar: "الجن", v: "28" }, { en: "Al-Muzzammil", ar: "المزمل", v: "20" }, { en: "Al-Muddaththir", ar: "المدثر", v: "56" }, { en: "Al-Qiyamah", ar: "القيامة", v: "40" }, { en: "Al-Insan", ar: "الإنسان", v: "31" }, { en: "Al-Mursalat", ar: "المرسلات", v: "50" }, { en: "An-Naba", ar: "النبأ", v: "40" }, { en: "An-Nazi'at", ar: "النازعات", v: "46" }, { en: "Abasa", ar: "عبس", v: "42" }, { en: "At-Takwir", ar: "التكوير", v: "29" }, { en: "Al-Infitar", ar: "الانفطار", v: "19" }, { en: "Al-Mutaffifin", ar: "المطففين", v: "36" }, { en: "Al-Inshiqaq", ar: "الانشقاق", v: "25" }, { en: "Al-Buruj", ar: "البروج", v: "22" }, { en: "At-Tariq", ar: "الطارق", v: "17" }, { en: "Al-A'la", ar: "الأعلى", v: "19" }, { en: "Al-Ghashiyah", ar: "الغاشية", v: "26" }, { en: "Al-Fajr", ar: "الفجر", v: "30" }, { en: "Al-Balad", ar: "البلد", v: "20" }, { en: "Ash-Shams", ar: "الشمس", v: "15" }, { en: "Al-Layl", ar: "الليل", v: "21" }, { en: "Ad-Duha", ar: "الضحى", v: "11" }, { en: "Ash-Sharh", ar: "الشرح", v: "8" }, { en: "At-Tin", ar: "التين", v: "8" }, { en: "Al-Alaq", ar: "العلق", v: "19" }, { en: "Al-Qadr", ar: "القدر", v: "5" }, { en: "Al-Bayyinah", ar: "البينة", v: "8" }, { en: "Az-Zalzalah", ar: "الزلزلة", v: "8" }, { en: "Al-Adiyat", ar: "العاديات", v: "11" }, { en: "Al-Qari'ah", ar: "القارعة", v: "11" }, { en: "At-Takathur", ar: "التكاثر", v: "8" }, { en: "Al-Asr", ar: "العصر", v: "3" }, { en: "Al-Humazah", ar: "الهمزة", v: "9" }, { en: "Al-Fil", ar: "الفيل", v: "5" }, { en: "Quraysh", ar: "قريش", v: "4" }, { en: "Al-Ma'un", ar: "الماعون", v: "7" }, { en: "Al-Kawthar", ar: "الكوثر", v: "3" }, { en: "Al-Kafirun", ar: "الكافرون", v: "6" }, { en: "An-Nasr", ar: "النصر", v: "3" }, { en: "Al-Masad", ar: "المسد", v: "5" }, { en: "Al-Ikhlas", ar: "الإخلاص", v: "4" }, { en: "Al-Falaq", ar: "الفلق", v: "5" }, { en: "An-Nas", ar: "الناس", v: "6" }];
         
         // 2. परिचय डेटा (इसे यहाँ पेस्ट करें)
         
@@ -1440,6 +1285,9 @@
         const player = document.getElementById('player-ui');
         let currentIdx = 0,
             ayahCount = 0;
+        
+        // Jab kisi surah ko kholte hue seedha ek specific ayah par jaana ho (e.g. Ayatul Kursi)
+        let pendingScrollAyah = null;
         
         // --- Ayah Audio Global Variables ---
         let currentAyahAudio = null;
@@ -1456,15 +1304,6 @@
         
         
         // 3. Counting function
-    function showPage(pageId) {
-    // Sabhi views ko pehle hide karein
-    document.getElementById('home-view').style.display = 'none';
-    document.getElementById('detail-view').style.display = 'none';
-
-    // Jo page manga gaya hai use show karein
-    const targetPage = document.getElementById(pageId);
-}
-        
         let visibleCount = 38;
         
         // Initial List Load Function
@@ -1694,6 +1533,21 @@
                     pinnedCard.style.border = "2px solid gold";
                 }
             }
+            
+            // Agar koi specific ayah target ki gayi thi (jaise Ayatul Kursi), wahan scroll karein
+            if (pendingScrollAyah !== null) {
+                const targetAyah = document.getElementById('ayah-' + (pendingScrollAyah - 1));
+                if (targetAyah) {
+                    setTimeout(() => {
+                        targetAyah.scrollIntoView({ behavior: "smooth", block: "center" });
+                        targetAyah.style.border = "2px solid gold";
+                        setTimeout(() => {
+                            targetAyah.style.border = "1px solid rgba(255,255,255,0.05)";
+                        }, 3000);
+                    }, 100);
+                }
+                pendingScrollAyah = null;
+            }
         }
         
         
@@ -1900,8 +1754,8 @@
         
         function seekAudio() {
     const progressBar = document.getElementById('progress-bar');
-    // Pehle check karo ki element aur audio dono sahi hain ya nahi
-    if (progressBar && typeof audio !== 'undefined' && isFinite(audio.duration)) {
+    // Pehle check karo ki element aur audio dono sahi hain, aur metadata load ho chuka hai ya nahi
+    if (progressBar && typeof audio !== 'undefined' && audio.readyState > 0 && isFinite(audio.duration)) {
         audio.currentTime = (progressBar.value / 100) * audio.duration;
     }
                     }
@@ -2123,6 +1977,7 @@
         
         // 2. Ayatul Kursi (Direct Baqarah Ayat 255 - Simple version)
         function goToAyatulKursi() {
+            pendingScrollAyah = 255; // Al-Baqarah ki Ayah 255 par seedha jump karein
             showDetail(1); // Surah Al-Baqarah kholega
         }
         
@@ -2348,55 +2203,6 @@
                 alert("Marked Ayat is view mein nahi mili!");
             }
         }
-
-// Page badalne ke liye function
-
-function showPage(pageId) {
-    // 1. Saare pages ko hide karo
-    const pages = document.querySelectorAll('.page');
-    pages.forEach(p => p.style.display = 'none');
-
-    // 2. Sirf us page ko dikhao jo manga gaya hai
-    const activePage = document.getElementById(pageId);
-    if (activePage) {
-        activePage.style.display = 'block';
-        window.scrollTo(0, 0);
-    }
-
-    // 3. Agar home par ja rahe hain toh Surah list ensure karein
-    if (pageId === 'home-view') {
-        const cont = document.getElementById('contner');
-        if (cont && cont.innerHTML === "") {
-            fetchSurahs(); // Agar list khali hai toh dobara load karein
-        }
-    }
-}
-
-
-const niyatData = {
-    fajr: { title: "फ़ज्र (Fajr) की नीयत", urdu: "نیت کرتا ہوں میں 2 رکعت نماز سنت/فرض فجر کی...", hindi: "मैं नियत करता हूँ 2 रकात नमाज़ सुन्नत/फ़र्ज़ फ़ज्र की..." },
-    zuhr: { title: "ज़ुहर (Zuhr) की नीयत", urdu: "نیت کرتا ہوں میں 4 رکعت نماز سنت/فرض ظہر की...", hindi: "मैं नियत करता हूँ 4 रकात नमाज़ सुन्नत/फ़र्ज़ ज़ुहर की..." },
-    asr: { title: "अस्र (Asr) की नीयत", urdu: "نیت کرتا ہوں میں 4 رکعت نماز سنت/فرض عصر की...", hindi: "मैं नियत करता हूँ 4 रकात नमाज़ सुन्नत/फ़र्ज़ अस्र की..." },
-    maghrib: { title: "मग़रिब (Maghrib) की नीयत", urdu: "نیت کرتا ہوں میں 3 رکعت نماز فرض مغرب की...", hindi: "मैं नियत करता हूँ 3 रकात नमाज़ फ़र्ज़ मग़रिब की..." },
-    isha: { title: "इशा (Isha) की नीयत", urdu: "نیت करता हूं में 4 رکعت نماز سنت/فرض عشاء की...", hindi: "मैं नियत करता हूँ 4 रकात नमाज़ सुन्नत/फ़र्ज़ इशा की..." }
-};
-
-function changeNiyat(prayer, btn) {
-    const data = niyatData[prayer];
-    const titleEl = document.getElementById('niyat-title');
-    const urduEl = document.getElementById('niyat-urdu');
-    const hindiEl = document.getElementById('niyat-hindi');
-    if (!data || !titleEl || !urduEl || !hindiEl) return;
-    titleEl.innerText = data.title;
-    urduEl.innerText = data.urdu;
-    hindiEl.innerText = data.hindi;
-
-    // Active button highlight
-    document.querySelectorAll('.n-btn').forEach(b => b.classList.remove('active'));
-    if (btn) btn.classList.add('active');
-}
-
-
 
     </script>
     
